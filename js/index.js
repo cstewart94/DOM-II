@@ -91,3 +91,13 @@ document.querySelectorAll(".nav-link").forEach(prevDefault => {
     e.preventDefault();
   })
 });
+
+
+
+//Greensock
+document.querySelectorAll(".btn").forEach(btnBounce =>{
+  btnBounce.addEventListener("mouseenter", function() {
+  TweenMax.to(this, 0.6, {scale:1.5, ease:Bounce.easeOut})
+  TweenMax.to(this, 0.4, {scale: 1, delay:0.6})
+  })
+})
